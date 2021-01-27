@@ -1,40 +1,26 @@
-.about__columns {
+.about__container {
   display: flex;
-  padding: 169px 17% 268px;
-  justify-content: space-between;
-  @include desktop {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-  @include phones {
-    flex-direction: column;
-    padding-top: 114px;
-    padding-bottom: 114px;
-  }
-}
-
-.about__user-text {
-  color: rgba($text-color, .5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 56%;
-  @include phones {
-    width: 100%;
-  }
-}
-
-.about__user {
-  width: 36%;
-  @include phones {
-    width: 100%;
-    margin-bottom: 50px;
-  }
 }
 
 .about__desc {
   font-weight: 600;
   margin-bottom: 20px;
+  color: rgba(#464d62, .5);
+}
+
+.about__user {
+  width: 36%;
+}
+
+.about__content {
+  flex: 1;
+}
+
+.about__text-info {
+  margin-bottom: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(#464d62, .5);
 }
 
 .about__title {
@@ -47,4 +33,9 @@
 .about__ps {
   font-style: italic;
   margin-bottom: 36px;
+
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.88;
+  color: rgba(#464d62, .5);
 }
