@@ -10,7 +10,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
   const isProductionBuild = argv.mode === "production";
-  const publicPath = "/";
+  const publicPath = "/Vue/dist/";
 
   const pcss = {
     test: /\.(p|post|)css$/,
@@ -92,9 +92,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, "./dist"),
       filename: "[name].[hash].build.js",
-      publicPath: isProductionBuild
-        ? publicPath
-        : "https://github.com/Realcoder16/Vue/dist/",
+      publicPath: isProductionBuild ? publicPath : " ",
       chunkFilename: "[chunkhash].js",
     },
     module: {
