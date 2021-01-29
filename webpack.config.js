@@ -92,7 +92,9 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, "./dist"),
       filename: "[name].[hash].build.js",
-      publicPath: isProductionBuild ? publicPath : "",
+      publicPath: isProductionBuild
+        ? publicPath
+        : "https://github.com/Realcoder16/Vue/dist/",
       chunkFilename: "[chunkhash].js",
     },
     module: {
